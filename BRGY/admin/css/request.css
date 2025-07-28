@@ -1,0 +1,287 @@
+/* ===== NAVBAR STYLES ===== */
+.navbar {
+    background-color: rgba(55, 120, 194, 0.8333);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    margin-left: 70px;
+}
+
+.navbar-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-name {
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 10px;
+    cursor: default;
+}
+
+.notification-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.badge-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 100%;
+    font-weight: bold;
+    line-height: 1;
+    z-index: 10;
+}
+
+/* ===== SEARCH CONTAINER ===== */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.search-input {
+    width: 50%;
+    max-width: 500px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-buttons {
+    position: absolute;
+    right: 20px; /* Matches table margin */
+    top: 170px; /* Adjusted to appear just above the table */
+    z-index: 1;
+}
+
+
+/* ===== TABLE STYLES ===== */
+.table-container {
+    height: 480px;
+    overflow-y: auto;
+    margin: 60px 20px 0 120px;
+    border: 1px solid #ccc;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Table Header */
+.custom-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #3778C2;
+    color: white;
+    z-index: 2;
+    padding: 20px 5px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+/* Table Body */
+.custom-table tbody td {
+    font-weight: 450;
+    padding: 12px;
+    border: 2px solid black;
+    background-color: #EEF1FF;
+}
+
+/* Table Image */
+.table-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+/* Column Widths */
+.custom-table th:nth-child(1),
+.custom-table td:nth-child(1) {
+    width: 5%; /* Index */
+}
+
+.custom-table th:nth-child(2),
+.custom-table td:nth-child(2) {
+    width: 20%; /* fullname */
+}
+
+.custom-table th:nth-child(3),
+.custom-table td:nth-child(3) {
+    width: 20%; /* service */
+}
+
+.custom-table th:nth-child(4),
+.custom-table td:nth-child(4) {
+    width: 20%; /* purpose */
+}
+
+.custom-table th:nth-child(5),
+.custom-table td:nth-child(5) {
+    width: 15%; /* Request Date */
+}
+
+.custom-table th:nth-child(6),
+.custom-table td:nth-child(6) {
+    width: 13%; /* Status */
+}
+
+.custom-table th:nth-child(7),
+.custom-table td:nth-child(7),
+.custom-table th:nth-child(8),
+.custom-table td:nth-child(8) {
+    width: 7%; /* Actions */
+}
+
+/* ===== ACTION BUTTONS ===== */
+.btn {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  margin: 2px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+}
+
+.btn-secondary {
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+}
+
+.btn-danger {
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+}
+
+.btn-success{
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+}
+
+.btn.view {
+    background-color: #0dcaf0;
+}
+
+.btn.delete {
+    background-color: #dc3545;
+}
+
+.btn.view:hover {
+    background-color: #003d7e;
+    color: white;
+}
+
+.btn.delete:hover {
+    background-color: #8a000e;
+    color: white;
+}
+
+/* ===== STATUS BADGES ===== */
+.status-badge {
+    font-size: 16px;
+    padding: 8px 12px;
+    font-weight: 600;
+}
+
+/* ===== MODAL STYLES ===== */
+.modal-header {
+    padding: 15px 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Resident Cards in Modal */
+.resident-card {
+    transition: all 0.3s ease;
+}
+
+.resident-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        margin-left: 0;
+        padding: 10px;
+    }
+    
+    .section-name {
+        font-size: 24px;
+    }
+    
+    .search-container {
+        margin-top: 15px;
+    }
+    
+    .search-input {
+        width: 80%;
+    }
+    
+    .table-container {
+        margin: 20px 10px;
+        height: auto;
+        max-height: 500px;
+    }
+    
+    .action-buttons {
+        margin: 15px 10px;
+    }
+    
+    .custom-table thead th {
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+    
+    .custom-table tbody td {
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    .table-img {
+        width: 40px;
+        height: 40px;
+    }
+}
