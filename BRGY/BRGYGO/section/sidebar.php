@@ -34,7 +34,7 @@
           <span class="nav-label">Dashboard</span>
         </a>
         <ul class="custom-dropdown-menu">
-          <li class="nav-item"><a href="#" class="nav-link dropdown-title" style="font-weight: 550;">Dashboard</a></li>
+          <li class="nav-item"><a href="dashboard.php" class="nav-link dropdown-title" style="font-weight: 550;">Dashboard</a></li>
         </ul>
       </li>
 
@@ -79,13 +79,13 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="announcement.php" class="nav-link">
           <i class="bi bi-megaphone"></i>
           <span class="nav-label">Announcement</span>
         </a>
         <ul class="custom-dropdown-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link dropdown-title" style="font-weight: 550;">Announcement</a>
+            <a href="announcement.php" class="nav-link dropdown-title" style="font-weight: 550;">Announcement</a>
           </li>
         </ul>
       </li>

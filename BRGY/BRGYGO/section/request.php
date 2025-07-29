@@ -28,7 +28,7 @@ $result = mysqli_query($conn, $query);
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="navbar-container">
-        <div class="section-name">Barangay Functionaries</div>
+        <div class="section-name">Barangay Request</div>
         <div class="notification-wrapper" id="notifBtn">
             <i class="bi bi-bell-fill" style="font-size: 35px;"></i>
             <span class="badge-number">4</span>

@@ -65,8 +65,9 @@
 
 /* === TABLE STYLING === */
 .table-container {
-  height: 480px;
-  overflow-y: auto;
+  height: 485px;
+  overflow-y: auto;         /* Only vertical scroll */
+  overflow-x: hidden;       /* Disable horizontal scroll */
   margin: 5px 20px 40px 120px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -78,29 +79,67 @@
   border-collapse: collapse;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  white-space: nowrap;
+  table-layout: auto;          /* Let table auto adjust column widths */
 }
 
-/* Table header */
 .custom-table thead th {
   position: sticky;
   top: 0;
   background-color: #3778C2;
   color: white;
   z-index: 2;
-  padding: 16px 8px;
+  padding: 20px 10px;
   border: 2px solid black;
-  font-size: 18px;
+  font-size: 16px;
+  max-width: 200px;
+  word-break: break-word;      /* ✅ Break long words */
+  white-space: normal;        /* ✅ Allow wrapping */
+  font-size: 20px
+
 }
 
-/* Table body rows */
 .custom-table td {
-  padding: 12px;
+  padding: 10px;
   border: 2px solid black;
   background-color: #EEF1FF;
   font-weight: 450;
+  max-width: 200px;            /* ✅ Limit width */
+  word-break: break-word;      /* ✅ Break long words */
+  white-space: normal;         /* ✅ Wrap */
+  overflow-wrap: break-word;   /* ✅ Extra support for long words */
+  text-align: center;
+  font-size: 17px;
 }
 
+.custom-table th:nth-child(1),
+.custom-table td:nth-child(1) {
+  width: 5%
+}
+
+.custom-table th:nth-child(2),
+.custom-table td:nth-child(2) {
+  width:27%;
+}
+
+.custom-table th:nth-child(3),
+.custom-table td:nth-child(3) {
+  width: 27%;
+}
+
+.custom-table th:nth-child(4),
+.custom-table td:nth-child(4) {
+  width: 20%;
+}
+
+.custom-table th:nth-child(5),
+.custom-table td:nth-child(5) {
+  width: 10%;
+}
+
+.custom-table th:nth-child(6),
+.custom-table td:nth-child(6) {
+  width: 11%;
+}
 /* === TABLE BUTTONS === */
 .btn {
   padding: 6px 10px;

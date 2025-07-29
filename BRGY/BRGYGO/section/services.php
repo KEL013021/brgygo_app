@@ -44,9 +44,9 @@ include('../database/connection.php');
                 <tr>
                     <th>ID</th>
                     <th>SERVICE NAME</th>
-                    <th>FEE</th>
                     <th>DESCRIPTION</th>
                     <th>REQUIREMENTS</th>
+                    <th>FEE</th>
                     <th>ACTION</th>
                 </tr>
             </thead>
@@ -63,9 +63,9 @@ include('../database/connection.php');
                     <tr>
                         <td><?= $row['id']; ?></td>
                         <td><?= htmlspecialchars($row['service_name']); ?></td>
-                        <td><?= htmlspecialchars($row['service_fee']); ?></td>
                         <td><?= htmlspecialchars($row['description']); ?></td>
                         <td><?= htmlspecialchars($row['requirements']); ?></td>
+                        <td><?= htmlspecialchars($row['service_fee']); ?></td>  
                         <td>
                             <button class="btn view" data-id="<?= $row['id']; ?>" data-bs-toggle="modal" data-bs-target="#viewServiceModal">
                                 <i class="bi bi-eye"></i>
